@@ -1,0 +1,12 @@
+class Reverse_arr1{
+
+    public static void main(String arg[]){
+        int[] n=new int[7];
+        System.out.println("enter the 7 num for the array:");
+        Scanner sc=new Scanner(System.in);
+        for(int i=0;i<n.length;i++){
+            n[i]=sc.nextInt();
+        }
+        Reverse_arr(n);
+    }
+}
