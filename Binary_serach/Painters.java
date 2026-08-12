@@ -29,7 +29,7 @@ public class Painters{
     }
     int e=sum;
     int mid=0;
-    while(e<=s){
+    while(s<=e){
       mid=s+(e-s)/2;
       if(isValid(arr,k,mid)){
         ans=mid;
