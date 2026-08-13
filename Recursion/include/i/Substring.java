@@ -41,11 +41,8 @@ public class Substring {
         String s = "abc";
 
         List<String> ans = new ArrayList<>();
-
         StringBuilder op = new StringBuilder();
-
         int index = 0;
-
         getAllSubString(s, index, op, ans);
 
         Collections.sort(ans);
