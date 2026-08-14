@@ -5,7 +5,7 @@ import java.util.List;
 public class Substring {
     public static void getAllSubString(String s, int index,
                                        StringBuilder op,
-                                       List<String> ans) {
+                                       List<String> ans){
         // Base case: when all characters have been processed
         if (index == s.length()) {
 
@@ -28,7 +28,6 @@ public class Substring {
 
         // Backtracking:
         // Remove the previously added character
-
         op.deleteCharAt(op.length() - 1);
 
         // Exclude the current character
@@ -44,9 +43,7 @@ public class Substring {
         StringBuilder op = new StringBuilder();
         int index = 0;
         getAllSubString(s, index, op, ans);
-
         Collections.sort(ans);
-
         System.out.println(ans);
     }
 }
