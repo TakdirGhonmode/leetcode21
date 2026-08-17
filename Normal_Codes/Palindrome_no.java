@@ -4,7 +4,7 @@ class Palindrome_No{
     int digit;
     int rev=0;
     int original=n;
-    System.out.print("the original no is :->");
+    System.out.println("the original no is :->"+original);
     while(n>0){
       digit=n%10;
       rev=(rev*10)+digit;
