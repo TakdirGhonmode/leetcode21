@@ -1,5 +1,5 @@
 class Peak_Mountent{
-  public static int peak_Mountent(int arr[],int target){
+  public static int peak_Mountent(int arr[]){
       int right=arr.length-1;
       int left=0;
       int mid=0;
