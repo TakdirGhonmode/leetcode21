@@ -1,12 +1,12 @@
 public class Square{
   public static int findSquare(int nu){
-    int r=nu;
-    int l=0;
-    int ans=-1;
+    long r=nu;
+   long l=0;
+    long ans=-1;
     while(l<=r){
-      int mid=l+(r-l)/2;
+      long mid=l+(r-l)/2;
       if(mid*mid==nu){
-        return ans;
+        return (int)mid;
       }
       else if(mid*mid>nu){
         r=mid-1;
@@ -14,7 +14,7 @@ public class Square{
         ans=mid;
         l=mid+1;
       }
-    }return ans;
+    }return (int)ans;
   }
   public static void main(String arg[]){
     int nu=64;
