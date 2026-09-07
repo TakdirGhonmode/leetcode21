@@ -21,5 +21,4 @@ public class Square{
     int ans=findSquare(nu);
     System.out.println("The ans=>"+ans);
   }
-  
 }
