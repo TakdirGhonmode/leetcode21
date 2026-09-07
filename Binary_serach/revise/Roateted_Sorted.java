@@ -5,6 +5,9 @@ public class Roateted_Sorted{
     int right=arr.length-1;
     while(left<=right){
       int mid=left+(right-left)/2;
+      if(arr[mid]==target){
+        return mid;
+      }
       if(arr[left]<=arr[mid]){
         if(arr[left]<=target && target<arr[mid]){
             right=mid-1;
