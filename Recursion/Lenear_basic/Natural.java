@@ -3,8 +3,8 @@ public class Natural{
     if(n==0){
       return ;
     }
-    System.out.println("the No=>"+n);
     natuaralN(n-1);
+    System.out.println("the No=>"+n);
   } 
   public static void main(String arg[]){
     int n=9;
