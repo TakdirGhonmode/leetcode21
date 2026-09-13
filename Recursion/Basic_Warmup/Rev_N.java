@@ -3,9 +3,7 @@ public class Rev_N {
   if (n == 0) {
     return rev;
 }
-
      int lastDigit = n % 10;
-
    return rev_N(n / 10, rev * 10 + lastDigit);
  }
   public static void main(String arg[]){
