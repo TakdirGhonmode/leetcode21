@@ -12,7 +12,7 @@ public class PalindromePartition{
       }
       for(int i=index;i<s.length();i++){
         if(isPalindrome(s,index,i)){
-              currenList.add(s.substring(index,i++));
+              currenList.add(s.substring(index,i+1));
               solve(s, i+1, currenList, ans);
               currenList.remove(currenList.size()-1);
         }
@@ -20,7 +20,7 @@ public class PalindromePartition{
     }
       public static boolean isPalindrome(String s,int start,int stop){
         while(start<stop){
-          if(s.charAt(start) !=s.charAt(stop)){
+          if(s.charAt(start) != s.charAt(stop)){
             return false;
           }
           start++;
@@ -30,13 +30,13 @@ public class PalindromePartition{
       }
    public static void main(String[] args) {
 
-        String s = "aab";
+    String s = "aab";
 
-        List<String> current = new ArrayList<>();
-        List<List<String>> ans = new ArrayList<>();
+    List<String> current = new ArrayList<>();
+    List<List<String>> ans = new ArrayList<>();
 
-        solve(s, 0, current, ans);
+    solve(s, 0, current, ans);
 
-        System.out.println(ans);
-    }
+    System.out.println(ans);
+}
 }
